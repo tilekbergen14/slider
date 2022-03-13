@@ -25,3 +25,30 @@ leftArrow.addEventListener("click", () => {
         img.id = "img" + (parseInt(index) - 1);
     });
 })
+
+images.forEach((img, index) => {
+    img.addEventListener('dragstart', (e) => {
+        e.preventDefault()
+    })
+    img.addEventListener('touchstart', touchStart(index))
+    img.addEventListener('touchend', touchEnd)
+    img.addEventListener('touchmove', touchMove)
+    // mouse events
+    img.addEventListener('mousedown', touchStart(index))
+    img.addEventListener('mouseup', touchEnd)
+    img.addEventListener('mousemove', touchMove)
+    img.addEventListener('mouseleave', touchEnd)
+});
+
+function touchStart(index) {
+    return function (event) {
+      console.log('start')
+    }
+  }
+  
+  function touchMove(event) {
+    console.log("move")
+  }
+  function touchEnd() {
+    
+  }
