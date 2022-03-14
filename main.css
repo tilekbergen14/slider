@@ -67,3 +67,26 @@ img{
     left: 100%;
     transform: translate(-200%, -50%);
 }
+
+@media screen and (max-width: 920px) {
+    img{
+        height: 240px;
+        width: 380px;
+    }
+    .slider{
+        height: 240px;
+    }
+}
+@media screen and (max-width: 576px) {
+    img{
+        height: 160px;
+        width: 300px;
+    }
+    .slider{
+        height: 160px;
+    }
+    .arrow{
+        height: 24px;
+        width: 24px;
+    }
+}
