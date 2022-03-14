@@ -21,6 +21,10 @@ img{
     position: absolute;
     border-radius: 16px;
     transition: all ease-out 0.2s;
+    background-color: #EEEEEE;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 #img0{
     z-index: 3;
